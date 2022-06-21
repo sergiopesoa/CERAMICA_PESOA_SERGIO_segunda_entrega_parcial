@@ -109,8 +109,8 @@
     color: rgb(240, 43, 76);
     animation-name: parrafoMovil ;
     position: relative;
-    animation-duration: 14s;
-    animation-iteration-count: 2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
@@ -124,6 +124,21 @@
 .section3 p:hover {
     transform: scale(1.5);
 }
+
+.button {
+    text-align: center;
+    font-size: 15px;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(170, 21, 46);
+    border-bottom: rgb(73, 7, 18);
+    border-radius: 5px;
+    margin-bottom: 40px;
+    animation-name: btn;
+    position: relative;
+    animation: btn 5s infinite;
+}
+
 
 .footer {
     height: 180px;
@@ -250,3 +265,8 @@
     75%  {left:0px; top:200px;}
     100% {left:0px; top:0px;}
   }
+  @keyframes btn{
+    from {left: 0px;}
+  to {left: 300px;}
+  }
+    
