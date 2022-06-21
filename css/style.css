@@ -107,6 +107,11 @@
     text-align: center;
     font-size: 40px;
     color: rgb(240, 43, 76);
+    animation-name: parrafoMovil ;
+    position: relative;
+    animation-duration: 14s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
 }
 
 .section3 p {
@@ -238,3 +243,10 @@
         font-size: 20px;
     }
 }
+@keyframes parrafoMovil{
+    0%   { left:0px; top:0px;}
+    25%  { left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
